@@ -6,13 +6,13 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 20:17:00 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/10 20:47:54 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/12 19:12:28 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(int a, int fd)
+static void	ft_putchar(int a, int fd)
 {
 	write(fd, &a, 1);
 }
