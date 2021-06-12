@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 21:18:58 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 14:44:34 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/12 15:05:30 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	concat = (char *)malloc(sizeof(s1) + sizeof(s2) + 1);
+	concat = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!concat)
 		return (NULL);
 	while (s1[i])
