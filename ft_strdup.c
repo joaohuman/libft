@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 22:48:31 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/11 23:21:06 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/12 10:09:53 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s)
 	size = ft_strlen((char *)s) + 1;
 	duplicated = (char *)malloc(size);
 	if (!duplicated)
-		return(0);
+		return (0);
 	if (!s)
 		return (0);
 	ft_strlcpy(duplicated, s, size);
