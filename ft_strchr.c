@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 22:48:57 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 12:07:57 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/12 12:14:52 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	size_t		len;
 
 	i = 0;
-	len = ft_strlen((char *)s);
+	len = ft_strlen(s);
 	if (c == '\0')
 		return ((char *)s + len);
 	while (s[i])
