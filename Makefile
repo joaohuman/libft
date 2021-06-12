@@ -37,6 +37,18 @@ SRC =	ft_atoi.c \
 
 OBJ = $(SRC:.c=.o)
 
+BONUS = ft_lstadd_back.c \
+		ft_lstadd_front.c \
+		ft_lstclear.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstsize.c \
+		
+BONUS_OBJECTS = $(BONUS:.c=.o)
+
 CC = gcc
 
 FLAGS = -Wall -Wextra -Werror
@@ -48,6 +60,12 @@ $(NAME): $(OBJ)
 
 $(OBJ): $(SRC)
 	$(CC) $(FLAGS) -c $(SRC)
+
+bonus: $(BONUS_OBJECTS)
+	ar -rcs $(NAME) $(BONUS_OBJECTS)
+
+$(BONUS_OBJECTS): $(BONUS)
+	$(CC) $(FLAGS) -c $(BONUS)
 
 clean:
 	rm -f $(OBJ)
