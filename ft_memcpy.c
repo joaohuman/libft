@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 19:56:42 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/11 22:45:11 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/11 22:50:40 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	dest_cast = (char *)dest;
 	src_a = (char *)src;
 	i = 0;
-	if (!(dest_cast) || !(src_a))
+	if (!(dest_cast) && !(src_a))
 		return(0);
 	while (n--)
 	{
