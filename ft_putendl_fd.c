@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 20:10:00 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/10 20:14:50 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/12 11:05:26 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write(fd, &*s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
