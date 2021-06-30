@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 21:27:13 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/11 23:14:04 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/18 19:40:27 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	s1_cast = (unsigned char *)s1;
 	s2_cast = (unsigned char *)s2;
-	if (n == 0)
+	if (!n)
 		return (0);
 	while (n--)
 	{

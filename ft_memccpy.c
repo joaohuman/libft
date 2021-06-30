@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/04 19:19:13 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/11 23:10:54 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/18 18:54:02 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 			return (dest + i + 1);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

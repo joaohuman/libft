@@ -68,7 +68,7 @@ $(BONUS_OBJECTS): $(BONUS)
 	$(CC) $(FLAGS) -c $(BONUS)
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJECTS)
 
 fclean: clean
 	rm -f $(NAME)

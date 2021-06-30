@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 20:51:25 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 14:31:37 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/29 20:21:35 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*substr;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	i = -1;
 	s_len = ft_strlen(s);
 	if (s_len < start)
 	{
 		substr = (char *)ft_calloc(sizeof(char), 1);
 		if (!substr)
-			return (0);
+			return (NULL);
 		return (substr);
 	}
 	if (len > ft_strlen(s + start))
@@ -35,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		substr = (char *)ft_calloc(sizeof(char), (len + 1));
 	if (!substr)
-		return (0);
+		return (NULL);
 	while (++i < len)
 		substr[i] = s[i + start];
 	return (substr);

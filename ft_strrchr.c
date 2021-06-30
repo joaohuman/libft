@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 23:25:50 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 12:19:23 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:14:01 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (s[i] == (char)c)
 		return ((char *)s + i);
-	return (0);
+	return (NULL);
 }

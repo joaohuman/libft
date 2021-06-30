@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/08 19:19:15 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/08 20:53:41 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/24 21:18:51 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *)(big + i));
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

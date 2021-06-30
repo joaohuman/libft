@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/03 21:34:49 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/04 18:43:18 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/18 21:45:53 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	a = (char *) s;
 	while (n--)
-		a[n] = (char) c;
+		*a++ = (char) c;
 	return (s);
 }

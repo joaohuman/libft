@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/09 21:45:47 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/09 22:09:17 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/17 22:04:19 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	total_size = size * nmemb;
 	allocated = (unsigned char *)malloc(total_size);
 	if (allocated == 0)
-		return (0);
+		return (NULL);
 	ft_bzero(allocated, total_size);
 	return (allocated);
 }

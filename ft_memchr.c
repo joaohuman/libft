@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 21:04:36 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 11:58:34 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/18 19:02:52 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)s_cast);
 		s_cast++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/12 09:50:15 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/12 10:10:52 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/29 20:59:42 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int	count_words(char const *s, char c)
 	how_many = 0;
 	while (s[i])
 	{
-		if (!is_word && s[i] != c)
+		if (is_word == 0 && s[i] != c)
 		{
 			is_word = 1;
 			how_many++;

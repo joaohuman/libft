@@ -6,7 +6,7 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 22:35:30 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/10 22:42:01 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:15:52 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	len = 0;
 	if (s1 == 0 || set == 0)
-		return (0);
+		return (NULL);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	len = ft_strlen((char *)s1);

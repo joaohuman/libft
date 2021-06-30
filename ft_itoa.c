@@ -6,13 +6,13 @@
 /*   By: jvictor- <jvictor-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/11 21:59:20 by jvictor-          #+#    #+#             */
-/*   Updated: 2021/06/11 22:16:35 by jvictor-         ###   ########.fr       */
+/*   Updated: 2021/06/17 22:31:39 by jvictor-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*concat_char(char *str,
+static char	*concat_char(char *str,
 							size_t size,
 							unsigned int num,
 							unsigned int is_negative)
@@ -28,7 +28,7 @@ char	*concat_char(char *str,
 	return (str);
 }
 
-int	ft_numlen(int n)
+static int	ft_numlen(int n)
 {
 	size_t	len;
 
